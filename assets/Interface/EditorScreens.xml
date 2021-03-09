@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nifty xmlns="http://nifty-gui.lessvoid.com/nifty-gui" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://raw.githubusercontent.com/void256/nifty-gui/1.4/nifty-core/src/main/resources/nifty.xsd https://raw.githubusercontent.com/void256/nifty-gui/1.4/nifty-core/src/main/resources/nifty.xsd">
+    <useStyles filename="nifty-default-styles.xml"/>
+    <useControls filename="nifty-default-controls.xml"/>
+    <!-- +++++++++++++++++++++++++++++++++++++++ -->
+    <!-- start screen -->
+    <!-- +++++++++++++++++++++++++++++++++++++++ -->
+    <screen id="GScreen0" controller="Root.ApplicationShell">
+       <layer id="GLayer0" childLayout="vertical">
+            <panel id="HeaderPanel" childLayout="vertical" width="100%" height="8%" backgroundColor="#0f0f"></panel>
+            <panel id="ContentPanel" childLayout="horizontal"width="100%" height="84%"backgroundColor="#f00f">
+                <panel id="CenterPanel" childLayout="vertical"width="100%"height="100%"backgroundColor="#0000"></panel>
+                    
+            </panel>
+            <panel id="FooterPanel" childLayout="horizontal"width="100%" height="8%"backgroundColor="#00ff"></panel>
+        </layer>
+    </screen>
+    
+    <screen id="GScreen1" controller="State.WorkspaceAppState">
+        <layer id="GLayer0" childLayout="vertical">
+            <panel id="HeaderPanel" childLayout="vertical" width="100%" height="8%" backgroundColor="#0f0f"></panel>
+            <panel id="ContentPanel" childLayout="horizontal"width="100%" height="84%"backgroundColor="#f000">
+                <panel id="LeftPanel" align="left" childLayout="vertical"width="25%"height="100%"backgroundColor="#ff08"></panel>
+                <panel id="CenterPanel" childLayout="vertical"width="50%"height="100%"backgroundColor="#0000"></panel>
+                <panel id="RightPanel" align="right" childLayout="vertical"width="25%"height="100%"backgroundColor="#ff08">
+                    <panel id="listboxpanel" valign="top" childLayout="vertical" height="350px">
+                        <control id="myListBox" name="listBox" displayItems="23" vertical="optional" horizontal="optional" />
+                    </panel>
+                    
+                    <panel id="axispanel" valign="bottom" childLayout="vertical"></panel>
+                    <panel id="XAxisPanel" childLayout="horizontal" width="100%" height="20px"backgroundColor="#000f">
+                        <control id="labelX" name="label" align="left" text="X Rot" width="20%"/>
+                        <control id="sliderX" name="horizontalSlider" width="80%" />
+                    </panel>
+                    <panel id="YAxisPanel" childLayout="horizontal" width="100%" height="20px"backgroundColor="#000f">
+                        <control id="labelY" name="label" align="left" text="Y Rot" width="20%"/>
+                        <control id="sliderY" name="horizontalSlider" width="80%" />
+                    </panel>
+                    <panel id="ZAxisPanel" childLayout="horizontal" width="100%" height="20px"backgroundColor="#000f">
+                        <control id="labelZ" name="label" align="left"text="Z Rot" width="20%" />
+                        <control id="sliderZ" text="Z" name="horizontalSlider" width="80%" />
+                    </panel>
+                </panel>
+                    
+            </panel>
+            <panel id="FooterPanel" childLayout="horizontal"width="100%" height="8%"backgroundColor="#00ff"></panel>
+        </layer>
+    </screen>
+    
+    <screen id="GScreen2" controller="Root.ApplicationShell">
+        <layer id="GLayer0" childLayout="vertical">
+            <panel id="HeaderPanel" childLayout="vertical" width="100%" height="8%" backgroundColor="#0f0f"></panel>
+            <panel id="ContentPanel" childLayout="horizontal"width="100%" height="84%"backgroundColor="#f00f">
+                <panel id="LeftPanel" childLayout="vertical"width="25%"height="100%"backgroundColor="#ff08"></panel>
+                <panel id="CenterPanel" childLayout="vertical"width="75%"height="100%"backgroundColor="#0000"></panel>
+                    
+            </panel>
+            <panel id="FooterPanel" childLayout="horizontal"width="100%" height="8%"backgroundColor="#00ff"></panel>
+        </layer>
+    </screen>
+    
+    <screen id="GScreen3" controller="Root.ApplicationShell">
+        <layer id="GLayer0" childLayout="vertical">
+            <panel id="HeaderPanel" childLayout="vertical" width="100%" height="8%" backgroundColor="#0f0f"></panel>
+            <panel id="ContentPanel" childLayout="horizontal"width="100%" height="84%"backgroundColor="#f00f">
+                <panel id="CenterPanel" childLayout="vertical"width="75%"height="100%"backgroundColor="#0000"></panel>
+                <panel id="RightPanel" childLayout="vertical"width="25%"height="100%"backgroundColor="#ff08"></panel>
+                    
+            </panel>
+            <panel id="FooterPanel" childLayout="horizontal"width="100%" height="8%"backgroundColor="#00ff"></panel>
+        </layer>
+    </screen>
+</nifty>

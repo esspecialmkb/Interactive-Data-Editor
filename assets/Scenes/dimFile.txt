@@ -1,0 +1,41 @@
+// dim is short for 'dimension'
+// this will be used as a script for character designer
+
+// example
+
+Humanoid [ Def, Build ] {
+    class = default
+    name = John Doe
+    sex = male
+
+    torso_height = 16         // y
+    torso_width_start = 4     // x
+    torso_width_end = 3       // x
+    torso_depth = 4           // z
+    torso_root_overlap = 1    // the amount of the segment hidden in it's parent 
+
+    chest_height = 16         // y
+    chest_width_start = 4     // x
+    chest_width_end = 3       // x
+    chest_depth = 4           // z
+    chest_root_overlap = 1    // the amount of the segment hidden in it's parent 
+
+    leg_height = 16         // y
+    leg_width_start = 4     // x
+    leg_width_end = 3       // x
+    leg_depth = 4           // z
+    leg_root_overlap = 1    // the amount of the segment hidden in it's parent
+
+    pelvis_height = 16         // y
+    pelvis_width_start = 4     // x
+    pelvis_width_end = 3       // x
+    pelvis_depth = 4           // z
+    pelvis_root_overlap = 1    // the amount of the segment hidden in it's parent
+
+    arm_height = 16         // y
+    arm_width_start = 4     // x
+    arm_width_end = 3       // x
+    arm_depth = 4           // z
+    arm_root_overlap = 1    // the amount of the segment hidden in it's parent
+
+}

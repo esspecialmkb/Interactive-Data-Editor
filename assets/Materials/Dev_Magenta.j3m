@@ -1,0 +1,8 @@
+Material Dev Black : Common/MatDefs/Misc/Unshaded.j3md {
+     MaterialParameters {
+        ColorMap : Models/DevTexture_Magenta.png
+        Color : 1.0 1.0 1.0 1.0
+     }
+    AdditionalRenderState {
+    }
+}
